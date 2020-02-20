@@ -2,7 +2,7 @@ require 'digest'
 
 puts "Введите слово или фразу для шифрования:"
 encrypt_item = STDIN.gets.chomp
-puts "Каким способом зашифровать:"
+puts "Каким способом зашифровать?"
 puts "1. MD5"
 puts "2. SHA1"
 user_choice = STDIN.gets.to_i
