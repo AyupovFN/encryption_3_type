@@ -5,6 +5,7 @@ encrypt_item = STDIN.gets.chomp
 puts "Каким способом зашифровать?"
 puts "1. MD5"
 puts "2. SHA1"
+puts "3. SHA2"
 user_choice = STDIN.gets.to_i
 
 result =
@@ -13,6 +14,8 @@ result =
     Digest::MD5.hexdigest(encrypt_item)
   when 2
     Digest::SHA1.hexdigest(encrypt_item)
+  when 3
+    Digest::SHA2.hexdigest(encrypt_item)
   else
     puts "Вы не выбрали способ шифрования!"
   end
